@@ -1,0 +1,66 @@
+/*-- Fonts --*/
+
+/* lato-300 - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Lato Light'), local('Lato-Light'),
+         url('../fonts/lato-v16-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+  }
+  /* lato-regular - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'),
+         url('../fonts/lato-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */    
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'),
+         url('../fonts/lato-v16-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+  }
+
+/*--/ Fonts --*/
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-color: royalblue;
+    width: 1020px;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+}
+
+.header {
+    background-color: #2d303a;
+    height: 90px;
+    padding: 0 40px;
+}
+
+.header-logo {
+    display: flex;
+    padding-top: 37px;
+
+}
+
+.header-logo p {
+    color: white;
+    font-size: 20pt;
+    text-transform: uppercase;
+    letter-spacing: -0.08em;
+}
+
+.header-logo-star {
+    color: #f06c64;
+    font-size: 20pt;
+}
