@@ -34,7 +34,6 @@
 }
 
 .wrapper {
-    background-color: royalblue;
     width: 1020px;
     height: 100vh;
     margin: 0 auto;
@@ -42,7 +41,7 @@
 }
 
 .header {
-    width: ;
+    display: flex;
     background-color: #2d303a;
     height: 95px;
     padding: 0 40px;
@@ -65,4 +64,77 @@
 .header-logo-star {
     color: #f06c64;
     font-size: 20pt;
+}
+
+.header-nav {
+    padding-left: 379px;
+    padding-top: 26px;
+}
+
+.header-nav ul {
+    list-style: none;
+    font-size: 9pt;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-nav ul li {
+   display: flex;
+}
+
+.header-nav ul li a {
+    letter-spacing: 0.1pt;
+    margin-top: 15px;
+    text-decoration: none;
+    color: white
+}
+
+.header-nav ul li a:hover {
+    color: #f06c64
+}
+
+.nav-text_hidden {
+    margin-left: 5px;
+    visibility: hidden;
+}
+
+.header-nav ul li span {
+    padding: 6px 9px;
+    font-size: 20pt;
+    color: #424657
+}
+
+.slider_block {
+    background-color: #f06c64;
+    height: 600px;
+    width: 1020px;
+    display: flex;
+}
+
+.slider_block-vertical_phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 19px;
+    margin-left: 7px;
+}
+
+.slider_block-left_arrow {
+    margin-right: 55px;
+    margin-left: 36px;
+}
+
+.slider_block-horizontal_phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+    margin-bottom: 19px;
+
+}
+
+.slider_block-right_arrow {
+    margin-left: 50px;
 }
