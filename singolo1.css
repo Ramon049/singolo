@@ -42,22 +42,24 @@
 }
 
 .header {
+    width: ;
     background-color: #2d303a;
-    height: 90px;
+    height: 95px;
     padding: 0 40px;
+    border-bottom: 6px solid #323746 ;
 }
 
 .header-logo {
     display: flex;
-    padding-top: 37px;
+    padding-top: 30px;
 
 }
 
 .header-logo p {
     color: white;
-    font-size: 20pt;
+    font-size: 19pt;
     text-transform: uppercase;
-    letter-spacing: -0.08em;
+    letter-spacing: -0.06em;
 }
 
 .header-logo-star {
