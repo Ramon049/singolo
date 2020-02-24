@@ -95,5 +95,71 @@
 }
 
 .portfolio-img {
+    width: 940px;
+    margin-top: 20px;
     display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-row-gap: 16px;
+    overflow: hidden;
+}
+
+.aboutUs {
+    height: 735px;
+    background-color: #f2f2f2;
+}
+
+.aboutUs-text {
+    width: 940px;
+    padding-top: 60px;
+    padding-left: 40px;
+}
+
+.aboutUs-text h2 {
+    font-weight: 700;
+    font-size: 22pt;
+    color: #666d89;
+    letter-spacing: -0.002em;
+}
+
+.aboutUs-text p {
+    color: #767e9d;
+    font-weight: 300;
+    font-size: 14pt;
+    margin-top: 21px;
+    letter-spacing: -0.045em;
+    line-height: 21pt;
+}
+
+.aboutUs-people {
+    width: 940px;
+    margin-left: 40px;
+    margin-top: 46px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.people-text h3 {
+    padding-top: 13px;
+    font-size: 13.5pt;
+    letter-spacing: -0.038em;
+    color: #666d89;
+    margin-bottom: 2px;
+}
+
+.people-text p {
+    padding-top: 4px;
+    color: #767e9e;
+    font-size: 11px;
+    line-height: 22px;
+}
+
+.people-socialImg {
+    padding-top: 21px;
+}
+
+.social {
+    margin-right: 4px;
 }
