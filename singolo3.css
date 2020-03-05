@@ -40,6 +40,7 @@
 }
 
 .getAquote {
+    border-bottom: solid 6px #ea676b;
     height: 655px;
     background-color: #f06c64;
 }
@@ -64,8 +65,8 @@
 }
 
 .getAquote-form {
-    margin-top: 43px;
-    margin-left: 40px;
+    margin-top: 22px;
+    margin-left: 20px;
     width: 620px;
     display: flex;
     flex-direction: column;
@@ -124,7 +125,87 @@
 }
 
 .form-submit:hover {
+    opacity: 0.75;
     color: #f0d8d9;
     background-color: #d6564f;
     cursor: pointer
+}
+
+.getAquote-form_contacts {
+    display: flex;
+}
+
+.getAquote-contact {
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 43px;
+}
+
+.contact-text p {
+    font-weight: 300;
+    padding-top: 6px;
+    color: #f0d8d9;
+    font-size: 11.5px;
+    line-height: 22px;
+}
+    
+.contact-text h3 {
+    color: #f0d8d9;
+    letter-spacing: -0.03em;
+}
+
+.information {
+    display: flex;
+    margin-bottom: 9px;
+}
+
+.information a {
+    text-decoration: none;
+    text-align: center;
+    padding-left: 15px;
+    color: #f0d8d9;
+    font-size: 10.5px;
+    letter-spacing: 0.046em
+}
+
+.information a:hover {
+    color:  hsl(0, 0%, 0%);
+}
+
+.information p {
+    text-align: center;
+    padding-left: 15px;
+    color: #f0d8d9;
+    font-size: 10.5px;
+    letter-spacing: 0.046em
+}
+
+.contact-information {
+    margin-top: 25px;
+    padding-left: 1px;
+}
+
+.information-img_phone {
+    margin-top: 2px;
+}
+
+.footer {
+    height: 76px;
+    background-color: #2d303a;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    padding-top: 29px;
+    padding-left: 43px; 
+}
+
+.footer-link {
+    padding-top: 21px;
+    padding-right: 40px; 
+}
+
+.footer-link a {
+    padding-right: 2px;
 }
