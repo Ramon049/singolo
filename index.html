@@ -10,8 +10,7 @@
     <div class="wrapper">
         <header class="header">
             <div class="header-logo">
-                <p>singolo</p>
-                <span class="header-logo-star">*</span>
+                <img src="./assets/img/SINGOLO.png" alt="Singolo">
             </div>
             <nav class="header-nav">
                 <ul>
@@ -37,7 +36,7 @@
 
         <section class="our_services_block">
             <div class="our_services_block-text">
-                <h2>Our Services</h2>
+                <h1>Our Services</h1>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
                     Duis mollis, non commodo luctus,nisi erat porttitor ligula, 
                     eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus 
@@ -48,7 +47,7 @@
             <div class="our_services_block-items">
                <div class="services_item">
                    <div class="item-img">
-                        <img src="../singolo/assets/img/pen.svg" alt="pen">
+                        <img src="../singolo/assets/img/pen.svg" alt="pen" >
                    </div>
                    <div class="item-text">
                        <h3>
@@ -252,8 +251,10 @@
             <div class="getAquote-form_contacts">
                 <div class="getAquote-form">
                     <form action="https://formspree.io/koshla.roman10@gmail.com" method="POST" enctype="text/plain" class="getAquote-form">
-                        <input type="text" name="name" id="name" placeholder="Name(Required)" class="form-item">
-                        <input type="email" name="mail" id="email" placeholder="Email(Required)" class="form-item">
+                        <input type="text" name="name" id="name" placeholder="Name(Required)" class="form-item"
+                        minlength="4" maxlength="15" required>
+                        <input type="email" name="mail" id="email" placeholder="Email(Required)" class="form-item"
+                        minlength="5" required>
                         <input type="text" name="subject" id="subject" placeholder="Subject" class="form-item">
                         <textarea name="project" id="project" cols="30" rows="10" placeholder="Describe your project in detail..." class="form-textarea"></textarea>
                         <button type="submit" value="submit" class="form-submit">Submit</button>
@@ -293,7 +294,7 @@
 
         <footer class="footer">
                 <div class="footer-logo">
-                    <img src="./assets/img/Copyright.png" alt="Copyright">
+                    <p>© Copiright 2013</p>
                 </div>
 
                 <div class="footer-link">
