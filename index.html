@@ -22,22 +22,30 @@
                 </ul>
             </nav>  
         </header>
-        <div class="content">
-            
-            <section class="slider_block" >
-                
-                <div class="slider_block-vertical_phone">
-                    <a href="#"><img class="slider_block-left_arrow" src="../singolo/assets/img/arrow left.png" alt="left arrow" width="16px" height="27px"></a> 
-                    <img src="../singolo/assets/img/iPhone Vertical.png" alt="vetrical phone" width="250px" height="480px">
-                </div>
-                <div class="slider_block-horizontal_phone">
-                    <img src="../singolo/assets/img/iPhone Horizontal.png" alt="horizontal phone" width="490px" height="240px">
-                    <a href="#"><img class="slider_block-right_arrow" src="../singolo/assets/img/arrow right.png" alt="right arrow" width="16px" height="27px"></a>
-                </div>
+        <div class="content"> 
+            <section class="slider_block" > 
+                <img class="slider_block-right_arrow" src="../singolo/assets/img/arrow right.png" alt="right arrow" width="16px" height="27px">
+                <img class="slider_block-left_arrow" src="../singolo/assets/img/arrow left.png" alt="left arrow" width="16px" height="27px"> 
+                <div class="slider_transform">
+                    <div class="slider_block-slide1">
+                        <div class="slider_block-vertical_phone" id="vertical_phone">
+                            <button id="iphone_button" class="iphone_button"></button>
+                            <div id="vertical_scrin" class="vertical_scrin hidden"></div>
+                            <img src="../singolo/assets/img/iPhone Vertical.png" alt="vetrical phone" width="250px" height="480px">
+                        </div>
+                        <div class="slider_block-horizontal_phone" id="horizontal_phone">
+                            <button id="iphone_button_2" class="iphone_button_2"></button>
+                            <div id="horizontal_scrin" class="horizontal_scrin hidden"></div>
+                            <img src="../singolo/assets/img/iPhone Horizontal.png" alt="horizontal phone" width="490px" height="240px">
+                        </div>
+                    </div>
+                    <div class="slider_block-slide2">
+                        <img src="./assets/img/phone-group.png" alt="slide2" >
+                    </div>    
+                </div>     
             </section>
             
             <section class="our_services_block" id="services">    
-
                 <div class="our_services_block-text">
                     <h1>Our Services</h1>
                     <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
@@ -143,7 +151,6 @@
             </section>
             
             <section class="portfolio" id="portfolio">
-                
                 <div class="portfolio-text">
                     <h2>Portfolio</h2>
                     <p>Duis mollis, est non commodo luctus, nisi erat
@@ -151,14 +158,14 @@
                     </p>
                 </div>
                 
-                <div class="portfolio-navBar">
-                    <div class="navBar-button"><a href="">All</a></div>
-                    <div class="navBar-button"><a href="">Web Design</a></div>
-                    <div class="navBar-button"><a href="">Graphic Design</a></div>
-                    <div class="navBar-button"><a href="">Artwork</a></div>
+                <div class="portfolio-navBar" id="portfolio-navBar">
+                    <div class="navBar-button">All</div>
+                    <div class="navBar-button">Web Design</div>
+                    <div class="navBar-button">Graphic Design</div>
+                    <div class="navBar-button">Artwork</div>
                 </div>
 
-                <div class="portfolio-img">
+                <div class="portfolio-img" id="portfolio-img">
                     <div class="portfolio-img-case"><img src="./assets/img/ship.png" alt="ship" width = "220" height="187"></div>
                     <div class="portfolio-img-case"><img src="./assets/img/smile.png" alt="smile" width = "220" height="187"></div>
                     <div class="portfolio-img-case"><img src="./assets/img/town.png" alt="town" width = "220" height="187"></div>
@@ -171,11 +178,9 @@
                     <div class="portfolio-img-case"><img src="./assets/img/words.png" alt="words" width = "220" height="187"></div>
                     <div class="portfolio-img-case"><img src="./assets/img/monstro.png" alt="monstro" width = "220" height="187"></div>
                     <div class="portfolio-img-case"><img src="./assets/img/shov.png" alt="shov" width = "220" height="187"></div>
-                </div>
-                
+                </div>   
             </section>
-            <section class="aboutUs" id="about">
-                
+            <section class="aboutUs" id="about">           
                 <div class="aboutUs-text">
                     <h2>About Us</h2>
                     <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
@@ -184,6 +189,7 @@
                         tortor mauris condimentum nibh.
                     </p>
                 </div>
+
                 <div class="aboutUs-people">
                     <div class="aboutUs-people-block">
                         <div class="people-img">
@@ -239,7 +245,6 @@
                         </div>
                     </div>
             </div>
-
             </section>
 
             <section class="getAquote" id="contact">
