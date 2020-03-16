@@ -48,11 +48,6 @@ CLOSE_BUTTON.addEventListener('click', () => {
     document.getElementById('message').classList.add('none');
 });
 
-PORTFOLIO_BUTTON.addEventListener('click', (event) => {
-    PORTFOLIO_BUTTON.querySelectorAll('div').forEach(el => el.classList.remove('active'));
-    event.target.classList.add('active');
-});
-
 IPHONE_BUTTON_V.addEventListener('click', () => {
     if(IPHONE_SCRIN_V.classList.value.includes('hidden')) {
         IPHONE_SCRIN_V.classList.remove('hidden');
@@ -68,6 +63,17 @@ IPHONE_BUTTON_H.addEventListener('click', () => {
         IPHONE_SCRIN_H.classList.add('hidden');
     }
 }); 
+
+PORTFOLIO_BUTTON.addEventListener('click', (event) => {
+    let img = [...PORTFOLIO_IMG.querySelectorAll('.portfolio-img-case')];
+    let pop = img.pop();
+    
+    img.unshift(pop);
+    img.forEach(x => PORTFOLIO_IMG.appendChild(x));
+
+    PORTFOLIO_BUTTON.querySelectorAll('div').forEach(el => el.classList.remove('active'));
+    event.target.classList.add('active');
+});
 
 PORTFOLIO_IMG.addEventListener('click', (event) => {
     PORTFOLIO_IMG.querySelectorAll('img').forEach(el => el.classList.remove('active'));

@@ -316,6 +316,7 @@ a.active {
 }
 
 .portfolio-navBar {
+    display: inline-block;
     padding-top: 15px;
 }
 
