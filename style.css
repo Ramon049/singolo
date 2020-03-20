@@ -62,6 +62,12 @@
     margin-top: 95px;
 }
 
+.menu_img {
+    display: none;
+
+    padding-top: 26px;
+}
+
 .header-logo {
     margin-top: 34px;
 }
@@ -666,12 +672,6 @@ p.messages {
  
 /* MEDIA */
 
-@media screen and (max-width: 375px) {
-    .header nav{
-        display: none;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .header-nav a {
         font-size: 8.8pt;
@@ -885,6 +885,116 @@ p.messages {
 
     .footer-link a {
         padding-right: 4px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header nav {
+        display: none;
+    }
+
+    .content {
+        margin-top: 71px;
+    }
+
+    .header {
+        padding: 0 20px;
+        max-width: 375px;
+        min-height: 71px;
+    }
+    .header-logo img {
+        width: 91px;
+    }
+
+    .header-logo {
+        padding-right: 116px;
+        margin-top: 28px;
+    }
+
+    .menu_img {
+        display: block;
+        cursor: pointer;
+    }
+
+    .slider_block {
+        max-height: 220px;
+        max-width: 375px;
+    }
+
+    .slider_block-slide1 {
+        height: 220px;
+        max-width: 375px;
+    }
+
+    .slider_block-slide2 {
+        height: 220px;
+        max-width: 375px;
+    }
+
+    .slider_block-slide2 img {
+        width: 182px;
+    }
+
+    .slider_block-left_arrow {
+        left: 11px;
+        top: 95px;
+        width: 14px;
+        height: 26px;
+    }
+
+    .slider_block-right_arrow {
+        right: 11px;
+        top: 95px;
+        width: 14px;
+        height: 26px;
+    }
+
+    .slider_block-vertical_phone {
+        margin-left: 42px;
+        margin-bottom: 1px
+    }
+
+    .slider_block-vertical_phone img {
+        height: 179px;
+        width: 93px;
+    }
+
+    .slider_block-horizontal_phone img {
+        width: 179px;
+        height: 93px;
+    }
+
+    .slider_block-horizontal_phone {
+        margin-left: 21px;
+        margin-bottom: 2px;
+    }
+
+    .iphone_button {
+        width: 18px;
+        height: 18px;
+        bottom: 33px;
+        left: 72px;
+    }
+
+    .iphone_button_2 {
+        width: 18px;
+        height: 18px;
+        top: 95px;
+        left: 158px;
+    }
+
+    .vertical_scrin {
+        width: 71px;
+        height: 124px;
+        top: 44px;
+        left: 46px;
+    }
+
+    .horizontal_scrin {
+        height: 76px;
+        width: 124px;
+        top: 67px;
+        left: 178px;
     }
 }
 /* ---MEDIA--- */

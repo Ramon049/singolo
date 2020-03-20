@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper" id="home">
+    <div class="wrapper" >
         <header class="header" id="header">
+            <div class="menu_img">
+                <img src="./assets/img/menu.svg" alt="menu" width="25px" height="20px">
+            </div>
             <div class="header-logo">
                 <img src="./assets/img/SINGOLO.png" alt="Singolo">
             </div>
@@ -22,8 +25,8 @@
                 </ul>
             </nav>  
         </header>
-        <div class="content"> 
-            <section class="slider_block" > 
+        <div class="content" id="content"> 
+            <section class="slider_block anchor" id="home"> 
                 <img class="slider_block-right_arrow" src="../singolo/assets/img/arrow right.png" alt="right arrow" width="16px" height="27px">
                 <img class="slider_block-left_arrow" src="../singolo/assets/img/arrow left.png" alt="left arrow" width="16px" height="27px"> 
                 <div class="slider_transform">
@@ -45,7 +48,7 @@
                 </div>     
             </section>
             
-            <section class="our_services_block" id="services">    
+            <section class="our_services_block anchor" id="services">    
                 <div class="our_services_block-text">
                     <h1>Our Services</h1>
                     <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
@@ -150,7 +153,7 @@
                 </div>
             </section>
             
-            <section class="portfolio" id="portfolio">
+            <section class="portfolio anchor" id="portfolio">
                 <div class="portfolio-text">
                     <h2>Portfolio</h2>
                     <p>Duis mollis, est non commodo luctus, nisi erat
@@ -180,7 +183,7 @@
                     <div class="portfolio-img-case"><img src="./assets/img/shov.png" alt="shov" width = "220" height="187"></div>
                 </div>   
             </section>
-            <section class="aboutUs" id="about">           
+            <section class="aboutUs anchor" id="about">           
                 <div class="aboutUs-text">
                     <h2>About Us</h2>
                     <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
@@ -244,10 +247,10 @@
                             <a href="#"> <img src="./assets/img/linkedIn.png" alt="linkedIn" class="social" width="32" height="32"></a>
                         </div>
                     </div>
-            </div>
+                </div>
             </section>
 
-            <section class="getAquote" id="contact">
+            <section class="getAquote anchor" id="contact">
                 
                 <div class="getAquote-text">
                     <h2>Get a Quote</h2>
@@ -258,7 +261,7 @@
                 </div>
                 <div class="getAquote-form_contacts">
                     <div class="getAquote-form">
-                        <form class="getAquote-form">
+                        <form class="getAquote-form" id="form">
                             <input type="text" value="" name="name" id="name" placeholder="Name(Required)" class="form-item"
                             minlength="4" maxlength="15" required>
                             <input type="email" value="" name="mail" id="email" placeholder="Email(Required)" class="form-item"
