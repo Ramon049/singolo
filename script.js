@@ -21,7 +21,6 @@ function onScroll(event) {
     const links = document.querySelectorAll('#nav-menu a');
 
     sect.forEach((el) => {
-        console.log(el.offsetTop, curPos, el.offsetHeight)
         if(el.offsetTop - 95 <= curPos && (el.offsetTop - 95 + el.offsetHeight)  > curPos) {
             links.forEach((a) => {
                 a.classList.remove('active');

@@ -172,7 +172,7 @@ a.active {
 }
 
 .slider_block {
-    width: 1020px;
+    width: 100vw;
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -189,7 +189,7 @@ a.active {
     background-color: #f06c64;
     height: 600px;
     display: flex;
-    width: 1020px;
+    width: 100vw;
     flex-shrink: 0;
     transition: all 0.2s;
 }
@@ -200,7 +200,7 @@ a.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1020px;
+    width: 100vw;
     flex-shrink: 0;
     background-color: #648BF0;
     transition: all 0.2s;
@@ -208,6 +208,7 @@ a.active {
 
 .slider_block-vertical_phone {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
@@ -223,6 +224,7 @@ a.active {
 }
 
 .slider_block-horizontal_phone {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -309,8 +311,10 @@ a.active {
     height: 870px;
     border-bottom: 6px solid #323746;
     background-color: #2d303a;
-    padding-left: 40px;
-    padding-top: 63px;
+}
+
+.portfolio-text {
+    padding: 63px 5% 0;
 }
 
 .portfolio-text h2 {
@@ -329,7 +333,8 @@ a.active {
 
 .portfolio-navBar {
     display: inline-block;
-    padding-top: 15px;
+    padding-top: 13px;
+    padding-left: 5%;
 }
 
 .navBar-button {
@@ -366,6 +371,7 @@ a.active {
 .portfolio-img {
     height: 870px;
     max-width: 940px;
+    margin-left: 5%;
     margin-top: 20px;
     display: grid;
     grid-template-rows: 187px 187px 187px;
@@ -663,7 +669,7 @@ p.messages {
 
 .footer-link {
     padding-top: 21px;
-    padding-right: 40px; 
+    padding-right: 4%; 
 }
 
 .footer-link a {
@@ -672,7 +678,8 @@ p.messages {
  
 /* MEDIA */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1019px) {
+
     .header-nav a {
         font-size: 8.8pt;
         letter-spacing: -0.01em;
@@ -680,7 +687,8 @@ p.messages {
     
     .slider_block {
         max-height: 452px;
-        max-width: 768px;
+        min-width: 768px;
+        max-width: 1020px;
     }
 
     .slider_block-slide1 {
@@ -688,7 +696,7 @@ p.messages {
     }
 
     .slider_block-vertical_phone {
-        margin-left: 86px;
+        margin-left: 11%;
     }
 
     .slider_block-vertical_phone img {
@@ -697,7 +705,7 @@ p.messages {
     }
 
     .slider_block-horizontal_phone {
-        margin-left: 45px;
+        margin-left: 6%;
         margin-bottom: 5px;
     }
 
@@ -719,43 +727,45 @@ p.messages {
     .iphone_button {
         width: 33px;
         height: 33px;
-        bottom: 73px;
-        left: 149px;
+        bottom: 67px;
+        left: 33%;
     }
 
     .iphone_button_2 {
         width: 33px;
         height: 33px;
-        bottom: 222px;
-        left: 327px;
-    }
+        bottom: 217px;
+        left: 1.8%;   }
 
     .vertical_scrin {
-        width: 143px;
+        width: 145px;
         height: 252px;
         top: 88px;
-        left: 95px;
+        left: 4%;
     }
 
     .horizontal_scrin {
         height: 143px;
-        width: 250px;
+        width: 252px;
         top: 143px;
-        left: 366px;
+        left: 12.2%;
     }
 
     .slider_block-slide2 {
         height: 452px;
-        max-width: 768px;
+        min-width: 768px;
+
     }
 
     .slider_block-slide2 img {
+        margin: 0 auto;
         width: 363px;
     }
 
     .our_services_block {
         height: 674px;
-        max-width: 768px;
+        min-width: 768px;
+        max-width: 1020px;
     }
 
     .our_services_block-text {
@@ -767,8 +777,8 @@ p.messages {
     }
 
     .our_services_block-items {
-        width: 652px;
         padding-top: 40px;
+        margin: 0 5% 0 0;
     }
 
     .services_item {
@@ -777,19 +787,28 @@ p.messages {
 
     .portfolio {
         min-height: 1102px;
-        max-width: 768px;
+        max-width: 1020px;
+        min-width: 768px;
+    }
+
+    
+
+    .portfolio-text p {
+        letter-spacing: 0.05em;
+        line-height: 28.5px;
+        padding-top: 20px;
     }
 
     .portfolio-navBar {
-        padding-top: 45px;
+        padding-top: 13px;
+        padding-left: 5%;
     }
 
     .portfolio-img {
-        max-width: 687px;
-        grid-template-columns: repeat(auto-fill, 217px);
-        grid-gap: 18px;
-        grid-row-gap: 16px;
-        margin-top: 31px;
+        grid-template-columns: repeat(3, 32%);
+        grid-gap: 1.9%;
+        grid-row-gap: 1.6%;
+        margin: 31px 5% 0 5%;
     }
 
     .portfolio-img-case img {
@@ -806,11 +825,8 @@ p.messages {
     }
 
     .aboutUs-people {
-        max-width: 768px;
-       
-        grid-template-columns: repeat(auto-fill, 219px);
-        margin-left: 41px;
-        margin-top: 40px;
+        grid-template-columns: repeat(3, 32%);
+        margin: 5% 40px 0;
         grid-gap: 15px;
     }
 
@@ -834,18 +850,23 @@ p.messages {
 
     .getAquote {
         height: 631px;
-        max-width: 768px;
+        min-width: 768px;
+        max-width: 1019px;
     }
 
     .getAquote-text {
         padding-top: 57px;
-        padding-left: 42px;
+        padding-left: 5%;
     }
 
     .getAquote-form {
         margin-top: 12px;
-        margin-left: 20px;
-        width: 441px;
+        margin-left: 3%;
+        width: 86%;
+    }
+
+    .getAquote-form_contacts {
+        justify-content: space-between;
     }
 
     .form-item {
@@ -860,8 +881,8 @@ p.messages {
     }
 
     .getAquote-contact {
-        width: 239px;
-        margin-left: 48px;
+        margin-left: -4%;
+        margin-right: 3%;
         margin-top: 24px;
     }
 
@@ -874,17 +895,18 @@ p.messages {
         margin-top: 14px;
     }
 
-    .footer {
-        justify-content: unset;
-    }
-
     .footer-link {
-        padding-left: 172px;
         padding-top: 22px;
+        margin-right: 1%;
     }
 
     .footer-link a {
         padding-right: 4px;
+    }
+
+    .footer-logo p {
+        margin-top: 35px;
+        letter-spacing: 0.09em;
     }
 }
 
@@ -961,7 +983,7 @@ p.messages {
 
     .slider_block-horizontal_phone img {
         width: 179px;
-        height: 93px;
+        height: 90px;
     }
 
     .slider_block-horizontal_phone {
@@ -995,6 +1017,18 @@ p.messages {
         width: 124px;
         top: 67px;
         left: 178px;
+    }
+
+    .our_services_block-text {
+        padding-top: 30px;
+    }
+
+    .our_services_block {
+        padding: 0 34px;
+    }
+
+    .our_services_block-text p {
+        line-height: 23pt;
     }
 }
 /* ---MEDIA--- */
