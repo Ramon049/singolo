@@ -59,7 +59,16 @@
 }
 
 .content {
+    position: relative;
     margin-top: 95px;
+}
+
+.menu_button {
+    transform: rotate(0deg);
+}
+
+.menu_button.active {
+    transform: rotate(90deg);
 }
 
 .menu_img {
@@ -127,8 +136,8 @@ a.active {
     opacity: 0;
     background-color: black;
     border-radius: 50%;
-    bottom: 98px;
-    left: 197px;
+    bottom: 89px;
+    left: 34%;
 }
 
 .iphone_button_2 {
@@ -139,8 +148,8 @@ a.active {
     opacity: 0;
     background-color: black;
     border-radius: 50%;
-    bottom: 297px;
-    left: 433px;
+    bottom: 287px;
+    left: 2.2%;
 }
 
 .vertical_scrin.hidden {
@@ -158,22 +167,21 @@ a.active {
     opacity: 1;
     background-color: black;
     top: 119px;
-    left: 125px;
+    left: 4.6%;
 }
 
 .horizontal_scrin{
     position: absolute;
     height: 190px;
-    width: 335px;
+    width: 337px;
     opacity: 1;
     background-color: black;
-    top: 188px;
-    left: 485px;
+    top: 189px;
+    left: 12.4%;
 }
 
 .slider_block {
     width: 100vw;
-    position: relative;
     display: flex;
     justify-content: flex-start;
 }
@@ -910,7 +918,11 @@ p.messages {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    #message {
+        width: 85%;
+    }
+    
     .header nav {
         display: none;
     }
@@ -921,7 +933,7 @@ p.messages {
 
     .header {
         padding: 0 20px;
-        max-width: 375px;
+        min-width: 375px;
         min-height: 71px;
     }
     .header-logo img {
@@ -929,7 +941,8 @@ p.messages {
     }
 
     .header-logo {
-        padding-right: 116px;
+        position: absolute;
+        left: 39%;
         margin-top: 28px;
     }
 
@@ -945,12 +958,14 @@ p.messages {
 
     .slider_block-slide1 {
         height: 220px;
-        max-width: 375px;
+        min-width: 375px;
+        max-width: 767px;
     }
 
     .slider_block-slide2 {
         height: 220px;
-        max-width: 375px;
+        min-width: 375px;
+        max-width: 767px;
     }
 
     .slider_block-slide2 img {
@@ -959,20 +974,20 @@ p.messages {
 
     .slider_block-left_arrow {
         left: 11px;
-        top: 95px;
+        top: 97px;
         width: 14px;
         height: 26px;
     }
 
     .slider_block-right_arrow {
         right: 11px;
-        top: 95px;
+        top: 97px;
         width: 14px;
         height: 26px;
     }
 
     .slider_block-vertical_phone {
-        margin-left: 42px;
+        margin-left: 11%;
         margin-bottom: 1px
     }
 
@@ -987,48 +1002,514 @@ p.messages {
     }
 
     .slider_block-horizontal_phone {
-        margin-left: 21px;
+        margin-left: 5.3%;
         margin-bottom: 2px;
     }
 
     .iphone_button {
         width: 18px;
         height: 18px;
-        bottom: 33px;
-        left: 72px;
+        bottom: 32px;
+        left: 31%;
     }
 
     .iphone_button_2 {
         width: 18px;
         height: 18px;
         top: 95px;
-        left: 158px;
+        left: 2%;
     }
 
     .vertical_scrin {
         width: 71px;
         height: 124px;
         top: 44px;
-        left: 46px;
+        left: 4%;
     }
 
     .horizontal_scrin {
         height: 76px;
         width: 124px;
         top: 67px;
-        left: 178px;
+        left: 12%;
     }
 
     .our_services_block-text {
         padding-top: 30px;
     }
 
+    .item-img {
+        padding-right: 5.9%;
+    }
+
     .our_services_block {
-        padding: 0 34px;
+        padding: 0 8.5%;
     }
 
     .our_services_block-text p {
+        margin-top: 20px;
         line-height: 23pt;
+    }
+
+    .our_services_block-items {
+        padding-top: 28px;
+        margin-left: -4%;
+        justify-content: center;
+        display: grid;
+    }
+
+    .services_item {
+        margin-bottom: 33px;
+    }
+
+    .portfolio-text {
+        padding: 43px 8% 0;
+    }
+
+    .portfolio-text p {
+        line-height: 29px;
+    }
+
+    .portfolio-navBar {
+        padding-top: 15px;
+        padding-left: 8%;
+    }
+
+    .portfolio-img-case img {
+        width: 151px;
+        height: 128px;
+    }
+
+    .portfolio-img {
+        grid-template-columns: repeat(2, 46%);
+        grid-gap: 0px;
+        grid-template-rows: repeat(4, 25.7%);
+        margin-left: 4%;
+        margin-top: 26px;
+        height: 553px;
+    }
+
+    .portfolio {
+        height: 843px;
+    }
+
+    .aboutUs {
+        height: 1755px;
+    }
+
+    .aboutUs-text {
+        min-width: 375px;
+        padding-top: 36px;
+        padding-left: 8%;
+        max-width: 767px;
+    }
+
+    .aboutUs-text p {
+        margin-top: 16px;
+        letter-spacing: -0.00em;
+        line-height: 23pt;
+    }
+
+    .people-text p {
+        padding-top: 0;
+    }
+
+    .aboutUs-people {
+        margin-left: 0;
+        margin-top: 26px;
+        justify-content: center;
+        grid-template-columns: 314px;
+    }
+
+    .people-img img {
+        width: 314px;
+        height: 314px;
+    }
+
+    .people-socialImg {
+        padding-top: 9px;
+    }
+
+    .aboutUs-people {
+        grid-gap: 30px;
+    }
+
+    .getAquote {
+        height: 969px;
+    }
+
+    .getAquote-text {
+        padding-top: 47px;
+        padding-left: 8%;
+        padding-right: 4%;
+    }
+
+    .getAquote-text h2 {
+        margin-bottom: 16px;
+    }
+
+    .getAquote-text p {
+        line-height: 23pt;
+        letter-spacing: 0.068em;
+        font-size: 12pt;
+    }
+
+    .getAquote-form {
+        margin-top: 12px;
+        margin-left: 4%;
+        width: 92%;
+    }
+
+    .getAquote-form_contacts {
+        flex-direction: column;
+    }
+
+    .form-item {
+        padding-left: 9px;
+        padding-top: 3px;
+        margin-bottom: 12px;
+    }
+
+    .form-textarea {
+        height: 158px;
+        padding-left: 11px;
+        padding-top: 2px;
+    }
+
+    .form-submit {
+        width: 100%;
+        height: 47px;
+        font-size: 13.5px;
+        text-transform: uppercase;
+    }
+
+    .getAquote-contact {
+        margin-left: 8%;
+        margin-top: 33px;
+        width: 89%;
+        min-width: 300px;
+        max-width: 767px;
+    }
+
+    .contact-text p {
+        padding-top: 0;
+    }
+
+    .contact-information {
+        margin-top: 16px;
+    }
+
+    .information {
+        margin-bottom: 11px;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+
+    .footer-link {
+         padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .header nav {
+        display: none;
+    }
+
+    .content {
+        margin-top: 71px;
+    }
+
+    .header {
+        padding: 0 20px;
+        min-width: 375px;
+        min-height: 71px;
+    }
+    .header-logo img {
+        width: 91px;
+    }
+
+    .header-logo {
+        padding-right: 35%;
+        margin-top: 28px;
+    }
+
+    .menu_img {
+        display: block;
+        cursor: pointer;
+    }
+
+    .slider_block {
+        max-height: 220px;
+        max-width: 375px;
+    }
+
+    .slider_block-slide1 {
+        height: 220px;
+        min-width: 375px;
+        max-width: 767px;
+    }
+
+    .slider_block-slide2 {
+        height: 220px;
+        min-width: 375px;
+        max-width: 767px;
+    }
+
+    .slider_block-slide2 img {
+        width: 182px;
+    }
+
+    .slider_block-left_arrow {
+        left: 11px;
+        top: 97px;
+        width: 14px;
+        height: 26px;
+    }
+
+    .slider_block-right_arrow {
+        right: 11px;
+        top: 97px;
+        width: 14px;
+        height: 26px;
+    }
+
+    .slider_block-vertical_phone {
+        margin-left: 7%;
+        margin-bottom: 1px
+    }
+
+    .slider_block-vertical_phone img {
+        height: 179px;
+        width: 93px;
+    }
+
+    .slider_block-horizontal_phone img {
+        width: 179px;
+        height: 90px;
+    }
+
+    .slider_block-horizontal_phone {
+        margin-left: -0.7%;
+        margin-bottom: 2px;
+    }
+
+    .iphone_button {
+        width: 18px;
+        height: 18px;
+        bottom: 32px;
+        left: 31%;
+    }
+
+    .iphone_button_2 {
+        width: 18px;
+        height: 18px;
+        top: 95px;
+        left: 2%;
+    }
+
+    .vertical_scrin {
+        width: 71px;
+        height: 124px;
+        top: 44px;
+        left: 4%;
+    }
+
+    .horizontal_scrin {
+        height: 76px;
+        width: 124px;
+        top: 67px;
+        left: 12%;
+    }
+
+    .our_services_block-text {
+        padding-top: 30px;
+    }
+
+    .item-img {
+        padding-right: 5.9%;
+    }
+
+    .our_services_block {
+        padding: 0 8.5%;
+    }
+
+    .our_services_block-text p {
+        margin-top: 20px;
+        line-height: 23pt;
+    }
+
+    .our_services_block-items {
+        padding-top: 28px;
+        margin-left: -4%;
+        justify-content: center;
+        display: grid;
+    }
+
+    .services_item {
+        margin-bottom: 33px;
+    }
+
+    .portfolio-text {
+        padding: 43px 8% 0;
+    }
+
+    .portfolio-text p {
+        line-height: 29px;
+    }
+
+    .portfolio-navBar {
+        padding-top: 15px;
+        padding-left: 8%;
+    }
+
+    .portfolio-img-case img {
+        width: 96%;
+        height: 128px;
+    }
+
+    .portfolio-img {
+        grid-template-columns: repeat(2, 46%);
+        grid-gap: 0px;
+        grid-template-rows: repeat(4, 25.7%);
+        margin-left: 4%;
+        margin-top: 26px;
+        height: 553px;
+    }
+
+    .navBar-button {
+        margin-right: 0;
+    }
+
+    .portfolio {
+        height: 843px;
+    }
+
+    .aboutUs {
+        height: 1755px;
+    }
+
+    .aboutUs-text {
+        min-width: 375px;
+        padding-top: 36px;
+        padding-left: 8%;
+        max-width: 767px;
+    }
+
+    .aboutUs-text p {
+        margin-top: 16px;
+        letter-spacing: -0.00em;
+        line-height: 23pt;
+    }
+
+    .people-text p {
+        padding-top: 0;
+    }
+
+    .aboutUs-people {
+        margin-left: 0;
+        margin-top: 26px;
+        justify-content: center;
+        grid-template-columns: 314px;
+    }
+
+    .people-img img {
+        width: 314px;
+        height: 314px;
+    }
+
+    .people-socialImg {
+        padding-top: 9px;
+    }
+
+    .aboutUs-people {
+        grid-gap: 30px;
+    }
+
+    .getAquote {
+        height: 969px;
+    }
+
+    .getAquote-text {
+        padding-top: 47px;
+        padding-left: 8%;
+        padding-right: 4%;
+    }
+
+    .getAquote-text h2 {
+        margin-bottom: 16px;
+    }
+
+    .getAquote-text p {
+        line-height: 23pt;
+        letter-spacing: 0.068em;
+        font-size: 12pt;
+    }
+
+    .getAquote-form {
+        margin-top: 12px;
+        margin-left: 4%;
+        width: 92%;
+    }
+
+    .getAquote-form_contacts {
+        flex-direction: column;
+    }
+
+    .form-item {
+        padding-left: 9px;
+        padding-top: 3px;
+        margin-bottom: 12px;
+    }
+
+    .form-textarea {
+        height: 158px;
+        padding-left: 11px;
+        padding-top: 2px;
+    }
+
+    .form-submit {
+        width: 100%;
+        height: 47px;
+        font-size: 13.5px;
+        text-transform: uppercase;
+    }
+
+    .getAquote-contact {
+        margin-left: 8%;
+        margin-top: 33px;
+        width: 89%;
+        min-width: 300px;
+        max-width: 767px;
+    }
+
+    .contact-text p {
+        padding-top: 0;
+    }
+
+    .contact-information {
+        margin-top: 16px;
+    }
+
+    .information {
+        margin-bottom: 11px;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+
+    .footer-link {
+         padding-right: 0;
     }
 }
 /* ---MEDIA--- */
