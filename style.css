@@ -91,6 +91,7 @@
 }
 
 .small_Menu_Nav {
+    box-shadow: 13px 1px 11px -2px rgba(0,0,0,0.58);
     background-color: #2d2f3b;
     position: fixed;
     width: 74%;
@@ -1300,7 +1301,8 @@ p.messages {
     }
 
     .header-logo {
-        padding-right: 35%;
+        position: absolute;
+        right: 44%;
         margin-top: 28px;
     }
 
