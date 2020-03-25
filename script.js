@@ -1,4 +1,6 @@
 const MENU = document.getElementById('nav-menu');
+const MENU_BUTTON = document.getElementById('menu_button');
+const SMALL_MENU =  document.getElementById('small_Menu');
 const SUBMIT = document.getElementById('submit');
 const FORM = document.getElementById('form');
 const CLOSE_BUTTON = document.getElementById('close_button');
@@ -13,12 +15,23 @@ const RIGHT_SLIDE = document.querySelector('.slider_block-right_arrow');
 const LEFT_SLIDE = document.querySelector('.slider_block-left_arrow');
 let direction;
 
+window.addEventListener('resize', () => {
+    let intViewportWidth = window.innerWidth;
+
+    if(intViewportWidth > 767) {
+        SMALL_MENU.style.display = 'none';
+        MENU_BUTTON.classList.remove('active');
+    }
+});
+
+
 document.addEventListener('scroll', onScroll);
 
 function onScroll(event) {
     const curPos = window.scrollY;
     const sect = document.querySelectorAll('.content .anchor');
     const links = document.querySelectorAll('#nav-menu a');
+    const smalMenuLinks = document.querySelectorAll('#small_Menu_Ul a');
 
     sect.forEach((el) => {
         if(el.offsetTop - 95 <= curPos && (el.offsetTop - 95 + el.offsetHeight)  > curPos) {
@@ -28,9 +41,29 @@ function onScroll(event) {
                     a.classList.add('active')
                 }
             })
-        }
+        }  
     })
 }
+
+MENU_BUTTON.addEventListener('click', () => {
+    if(!MENU_BUTTON.classList.value.includes('active')) {
+        MENU_BUTTON.classList.add('active');
+        SMALL_MENU.style.display = 'block';
+        SMALL_MENU.style.transitionDuration = '400ms';
+    } else {
+        MENU_BUTTON.classList.remove('active');
+        SMALL_MENU.style.display = 'none';
+        SMALL_MENU.style.transitionDuration = '400ms';
+    }
+    
+});
+
+SMALL_MENU.addEventListener('click', (event) => {
+    SMALL_MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
+    event.target.classList.add('active');
+    SMALL_MENU.style.display = 'none';
+    MENU_BUTTON.classList.remove('active');
+});
 
 MENU.addEventListener('click', (event) => {
     MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));

@@ -63,18 +63,70 @@
     margin-top: 95px;
 }
 
-.menu_button {
-    transform: rotate(0deg);
+.menu-logo img{
+    width: 93px;
+    position: absolute;
+    top: 28px;
+    left: 25%;
 }
 
 .menu_button.active {
+    transition: all 0.5s;
     transform: rotate(90deg);
+}
+
+.menu_button {
+    transition: all 0.5s;
 }
 
 .menu_img {
     display: none;
+    margin-left: 5%;
+    position: fixed;
+    z-index: 4;
+    top: 26px;
+    left: 0;
+    transition: all 0.5s;
+    transform: rotate(0deg);
+}
 
-    padding-top: 26px;
+.small_Menu_Nav {
+    background-color: #2d2f3b;
+    position: fixed;
+    width: 74%;
+    z-index: 4;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.small_Menu_Ul a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18pt;
+    letter-spacing: -0.05em;
+}
+
+.small_Menu_Li {
+    padding-bottom: 30px;
+}
+
+.small_Menu_Ul {
+    padding-top: 234px;
+    list-style-type: none;
+    padding-left: 26%;
+}
+
+.right_side {
+    position: fixed;
+    right: 0;
+    z-index: 5;
+    top: 0;
+    height: 100vh;
+    width: 26%;
+    background-color: rgba(29, 25, 25, 0.533);
 }
 
 .header-logo {
@@ -198,6 +250,7 @@ a.active {
     height: 600px;
     display: flex;
     width: 100vw;
+    max-width: 1020px;
     flex-shrink: 0;
     transition: all 0.2s;
 }
@@ -209,6 +262,7 @@ a.active {
     justify-content: center;
     align-items: center;
     width: 100vw;
+    max-width: 1020px;
     flex-shrink: 0;
     background-color: #648BF0;
     transition: all 0.2s;
@@ -700,6 +754,8 @@ p.messages {
     }
 
     .slider_block-slide1 {
+        min-width: 768px;
+        max-width: 1020px;
         height: 452px;
     }
 
@@ -762,6 +818,7 @@ p.messages {
     .slider_block-slide2 {
         height: 452px;
         min-width: 768px;
+        max-width: 1020px;
 
     }
 
@@ -919,6 +976,14 @@ p.messages {
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
+    * {
+        scroll-margin-top: 71px;
+    }
+
+    .menu_img {
+        display: inline-block;
+    }
+
     #message {
         width: 85%;
     }
